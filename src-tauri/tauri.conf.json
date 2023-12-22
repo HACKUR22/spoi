@@ -1,0 +1,59 @@
+{
+	"build": {
+		"beforeDevCommand": "bun run dev",
+		"beforeBuildCommand": "bun run build",
+		"devPath": "http://localhost:1420",
+		"distDir": "../dist"
+	},
+	"package": {
+		"productName": "spicetify-v3",
+		"version": "0.0.0"
+	},
+	"tauri": {
+		"bundle": {
+			"active": true,
+			"targets": "all",
+			"identifier": "com.spicetify.app",
+			"icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"]
+		},
+		"security": {
+			"csp": null
+		},
+		"windows": [
+			{
+				"fullscreen": false,
+				"resizable": true,
+				"title": "spicetify",
+				"width": 800,
+				"height": 600
+			}
+		]
+	},
+	"plugins": {
+		"shell": {
+			"open": true
+		},
+		"cli": {
+			"description": "hello world",
+			"longDescription": "",
+			"beforeHelp": "",
+			"afterHelp": "",
+			"args": [],
+			"subcommands": {
+				"test": {
+					"description": "test command",
+					"args": [
+						{
+							"name": "foo",
+							"short": "f",
+							"takesValue": true,
+							"required": true,
+							"description": "test arg",
+							"possibleValues": ["foo", "bar"]
+						}
+					]
+				}
+			}
+		}
+	}
+}
