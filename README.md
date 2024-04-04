@@ -26,5 +26,5 @@ Supports Windows, MacOS and Linux.
 
 - [Installation](https://spicetify.app/docs/getting-started)
 - [Basic Usage](https://spicetify.app/docs/getting-started#basic-usage)
-- [Discord](https://discord.gg/godspunky-network-1026498084777230376)
+- [Discord](https://discord.gg/PJhJSVV5W9)
 - [FAQ](https://spicetify.app/docs/faq)
